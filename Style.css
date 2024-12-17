@@ -1,0 +1,1366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppions:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-position: center;
+}
+
+
+
+
+body {
+  background-color: rgb(250, 254, 250);
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+header {
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  padding: 10px 0px;
+  /*speade up to header*/
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+
+}
+
+.logo img {
+
+  height: 120px;
+  /* Adjust height as needed */
+  margin-top: -40px;
+  /* Spacing from left */
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+nav ul li {
+  position: relative;
+  margin: 0px 9px;
+
+
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0px 0px;
+  display: inline-block;
+  background: linear-gradient(to bottom, #cfa66a, #ebc994, #fffbd7);
+  transition: background 0.3s ease;
+  border-radius: 30px;
+
+
+}
+
+nav ul li:hover>ul {
+  display: block;
+
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  width: 240px;
+  /* Width of the submenus */
+  text-align: left;
+  padding-left: 50px;
+  z-index: 1;
+
+
+}
+
+nav ul ul li {
+
+  position: relative;
+  margin: left 600px;
+  width: 15px;
+  float: none;
+  display: list-item;
+
+
+}
+
+nav ul li a {
+  padding: 10px 25px;
+  /*header pading */
+}
+
+nav ul li:hover>a {
+  background: linear-gradient(to bottom, red 0%, rgb(234, 219, 14) 100%, rgb(206, 206, 195) 100%);
+}
+
+/* From Uiverse.io by mrtqzbek11 */
+#lbut {
+  width: 80px;
+  height: 70px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: linear-gradient(yellow, rgb(255, 42, 42));
+  transition: 0.1s;
+}
+
+#lbut::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#lbut:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  transition: 0.5s;
+}
+
+#menu-btn {
+  font-size: 1.5rem;
+  color: #b93b3b;
+  cursor: pointer;
+  display: none;
+
+}
+
+#slbut {
+  width: 80px;
+  height: 70px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: linear-gradient(yellow, rgb(255, 42, 42));
+  transition: 0.1s;
+}
+
+#slbut::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#slbut:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  transition: 0.5s;
+}
+
+#menu-btn {
+  font-size: 1.5rem;
+  color: #b93b3b;
+  cursor: pointer;
+  display: none;
+
+}
+
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat (auto-fit, minmax (16rem, 1fr));
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #e9e0e0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by AqFox */
+#bookNowBtn {
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+
+  background: linear-gradient(yellow, rgb(255, 42, 42), lightblue);
+  transition: 0.1s;
+
+  width: 90px;
+  height: 62px;
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1)33%, rgba(161, 231, 10, 0.333), #9be00600 67%) var(--_p, 100%)/300% no-repeat,
+    #0468ea;
+
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1)* 0.08em) -.01em 0 var(--c),
+    calc(var(--_i, -1)*-0.08em) .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+#bookNowBtn:hover,
+#bookNowBtn:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+#bookNowBtn:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+#bookNowBtn {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .6em;
+}
+
+
+
+
+
+
+/* Slideshow container start */
+.slider {
+  padding-top: 100px;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+
+
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.slide {
+  min-width: 100%;
+  /* box-sizing: border-box;*/
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+  /* z-index:100%; */
+}
+/* .slid end */
+
+
+/* Home services str. */
+.gridhead {
+  color: #004dff;
+  font-weight: 900;
+  text-align: center;
+  font-size: 35px;
+  margin: 15px 0px 50px 0px;
+}
+
+.gallbox {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22% 22%;
+  margin-bottom: 50px;
+  margin-left: 60px;
+  flex-wrap: wrap;
+}
+
+.gall {
+  width: 200px;
+  height: 220px;
+  background: rgba(76, 62, 93, 0);
+  text-align: center;
+  border-radius: 40px;
+}
+
+.gall:hover {
+  transform: scale(1.1);
+  transition: 1s;
+
+}
+
+.catimg {
+  /* width: 200px; */
+  height: 195px;
+
+}
+
+h2 {
+  font-family: Arial Unicode MS;
+  font-size: 20px;
+}
+
+
+
+
+.tx2 {
+  color: #004dff;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.body1 {
+  width: 100%;
+  min-width: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
+
+.row {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+  padding: 5rem 0;
+
+}
+
+.row.imgWrapper {
+  overflow: hidden;
+}
+
+.row.imgWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.row .imgWrapper:hover img {
+  transform: scale(1.25);
+}
+
+.row.contentWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-Left: 30px;
+}
+
+.text2 {
+  color: #004dff;
+  font-weight: 900;
+  text-align: center;
+  font-size: 35px;
+  margin: 15px 0px 50px 0px;
+}
+
+.row .contentWrapper .Wrapper {
+  display: block;
+  font-size: 40px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20;
+  margin-bottom: 20px;
+}
+
+.row .contentWrapper span.tx2Wrapper span {
+  display: inline-block;
+  background: #383f47;
+  width: 70px;
+  height: 5px;
+}
+
+.row.contentWrapper h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #383f47;
+  padding-bottom: 200px;
+}
+
+.row.contentWrapper p {
+  font-size: 16px;
+  Line-height: 2Spx;
+  padding-bottom: 25px;
+}
+
+
+
+
+
+
+footer {
+  /* width: 100%; */
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 0px 0 0px;
+  border-top-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row1 {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.logo1 {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: lpx solid #ccc;
+  margin: 20px 0px;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.myweb {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  padding: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.WhatsApp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 100px;
+  z-index: 10;
+
+}
+
+/* About US Page start in Content css */
+
+h1 {
+  padding: 9%;
+  color: #004dff;
+  text-align: center;
+  box-shadow: inset;
+}
+
+.ro1 {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+  padding: 5rem 0;
+
+}
+
+
+
+/* services css start */
+
+.cont {
+  position: relative;
+  background-image: url(img/Rahe\ Beauty\ paler\ &\ Classes\ Skin\ Services.png);
+  margin-bottom: 10px;
+}
+
+/* From Uiverse.io by IWhat1 */
+.con1 {
+  display: grid;
+  /* grid-template-columns: repeat(3, 22%) */
+  grid-template-columns: 21% 21% 21% 21% 21%;
+  grid-template-rows: 59%;
+  margin: 30px 30px 30px;
+}
+
+.container {
+
+  height: 294px;
+  width: 240px;
+  color: rgb(245, 14, 14);
+  perspective: 800px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 2rem;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  position: absolute;
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid black;
+  top: 0;
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 0px 10px 5px rgb(215, 215, 29);
+}
+
+.card-top-para {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container:hover>.card {
+  cursor: pointer;
+  transform: rotateX(180deg) rotateZ(-180deg);
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10px 5px rgb(177, 87, 219);
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.back {
+  background-color: rgb(11, 10, 10);
+  transform: rotateX(180deg) rotateZ(-180deg);
+}
+
+.heading {
+  color: #e6e8ee;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* From Uiverse.io by JaydipPrajapati1910 */
+.button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,
+.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,
+.book,
+.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.book {
+  top: 0
+}
+
+.book,
+.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #222;
+  background: linear-gradient(to bottom, red 0%, rgb(234, 219, 14) 100%, rgb(206, 206, 195) 100%);
+  
+}
+.button:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  transition: 0.5s;
+}
+
+
+.button:hover .book {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+
+
+
+
+.cont {
+  margin-top: 90px;
+  position: relative;
+  text-align: center;
+  color: #004dff;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* course page css start */
+
+#form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  display: none;
+}
+
+#form-container.show {
+  display: block;
+}
+
+/* coursw page css end */
+
+
+/* Franchise Buy page start */
+
+.pr {
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fimg {
+  align-items: center;
+  padding: 20px 20px 20px;
+}
+
+.title {
+  padding: 20px;
+  font-style: unset;
+  color: #0026fc70;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.Frcard-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fcard {
+  background-color: white;
+  color: #5A2A82;
+  border-radius: 20px;
+  width: 250px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.fcard i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.fcard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.fcard p {
+  font-size: 16px;
+}
+
+/* franchise buy page css button */
+/* From Uiverse.io by ShrinilDhorda */ 
+.btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: unset;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px #1f4c65;
+  -webkit-box-reflect: below 3px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  display: block;
+  margin: 0 auto 50px;
+  width: fit-content;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+/* Franchise Buy page form */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.franchise-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #5A2A82;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    height: 100px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #f0f0f0;
+}
+.button-container button {
+        position: relative;
+        overflow: hidden;
+}
+.button-container button:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        background: rgba(255, 255, 255, .5);
+        opacity: 0;
+        border-radius: 100%;
+        transform: scale(1, 1) translate(-50%);
+        transform-origin: 50% 50%;
+}
+@keyframes ripple {
+        0% {
+            transform: scale(0, 0);
+            opacity: 1;
+        }
+        20% {
+            transform: scale(25, 25);
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: scale(40, 40);
+        }
+}
+.button-container button:focus:not(:active)::after {
+        animation: ripple 1s ease-out;
+}
+.update-button, .submit-button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+}
+.update-button {
+        background-color: #5A2A82;
+        color: white;
+}
+    .update-button:hover {
+        background-color: #4A1A72;
+}
+.submit-button {
+        background-color: #4CAF50;
+        color: white;
+}
+.submit-button:hover {
+        background-color: #45a049;
+}
+h1 {
+        color: #5A2A82;
+        text-align: center;
+        /* margin-bottom: 30px; */
+}
+
+
+h2 {
+  color: #0468ea;
+  text-align: center;
+
+}
+
+.logbut {
+  width: 100%;
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.logbut:hover {
+  background-color: #3e8e41;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* book now form */
+.booking-container {
+ max-width: 500px;
+ margin: 20px auto;
+ padding: 20px;
+ background-color: #f9f9f9;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-toggle {
+            display: none;
+        }
+
+ .form-toggle-label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 20px;
+}
+
+.hidden-form {
+            display: none;
+ }
+
+.form-toggle:checked ~ .hidden-form {
+            display: block;
+}
+
+.form-group {
+            margin-bottom: 15px;
+}
+
+label {
+            display: block;
+            margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+ }
+
+.submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+}
+
+.submit-btn:hover {
+            background-color: #45a049;
+}
+
+
+/* form course */
+
+.cont3 {
+
+
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message {
+  margin-top: 80px;
+  text-align: center;
+  color: green;
+}
+
+
+/* contact us css */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-info, .contact-form {
+  flex-basis: 48%;
+}
+
+.contact-info h2, .contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* contact us css end */
+
+
+/*index page css */
+
+.lobuton {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 95.02px;
+  height: 42.66px;
+  border: none;
+  background-color: #3653f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lobuton.span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+.lobuton:hover .span-mother {
+  position: absolute;
+}
+
+.lobuton:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+.lobuton.span-mother span:nth-child(1) {
+  transition: 0.2s;
+}
+
+.lobuton .span-mother span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.lobuton .span-mother span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.lobuton .span-mother span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.lobuton.span-mother span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.lobuton .span-mother span:nth-child(6) {
+  transition: 0.7s;
+}
+
+.lobuton .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.lobuton .span-mother2 span {
+  transform: translateY(-1.2em);
+}
+
+.lobuton:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+.lobuton .span-mother2 span {
+  transition: 0.2s;
+}
+
+.lobuton .span-mother2 span:nth-child(2) {
+  transition: 0.3s;
+}
+
+.lobuton .span-mother2 span:nth-child(3) {
+  transition: 0.4s;
+}
+
+.lobuton .span-mother2 span:nth-child(4) {
+  transition: 0.5s;
+}
+
+.lobuton .span-mother2 span:nth-child(5) {
+  transition: 0.6s;
+}
+
+.lobuton .span-mother2 span:nth-child(6) {
+  transition: 0.7s;
+}
+
+/*index page css end */
